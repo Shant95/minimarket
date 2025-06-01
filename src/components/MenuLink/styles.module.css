@@ -1,0 +1,65 @@
+.menuLink {
+    border: 1px solid #ccc;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2rem;
+    transition: all 0.2s linear;
+}
+
+.menuLink:hover {
+    background-color: rgba(253, 109, 7, 0.5);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.active {
+    background-color: rgb(253, 109, 7);
+    transition: all 0.2s linear;
+}
+
+.active .link {
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.image > img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+@media screen and (max-width: 609px)  {
+    .link {
+  font-size: 14px;
+    }
+}
+
+.link .active {
+    color: #fff;
+}
+
+@media screen and (max-width: 444px)  {
+    .link {
+  font-size: 12px;
+    }
+}
+

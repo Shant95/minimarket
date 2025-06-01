@@ -1,0 +1,126 @@
+.menuchat {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 420px;
+    background-color: white;
+    top: 190px;
+    right: 50px;
+    z-index: 999999999999;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+}
+@media screen and (max-width: 433px)  {
+    .menuchat {
+ width: 328px;
+ right: 30px;
+ height: 385px;
+    }
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: blueviolet;
+}
+
+.contain>h3 {
+    color: white;
+    font-size: 21px;
+    margin-left: 99px;
+}
+
+.contain>p {
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    margin-left: 60px;
+}
+@media screen and (max-width: 433px)  {
+    .contain>p{
+ margin-left: 40px;
+    }
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 73%;
+    gap: 8px;
+}
+
+.items>p {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+.items>div {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    height: 30px;
+    border-radius: 2rem;
+    border: 1px solid silver
+}
+
+.items>div:hover {
+    border: 1px solid blue;
+}
+
+.input {
+    width: 91%;
+    height: 27px;
+    border: none;
+    outline: none;
+}
+
+.button {
+    width: 40%;
+    height: 40px;
+    border-radius: 2rem;
+    margin-left: 194px;
+    border: none;
+    background-color: blueviolet;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+@media screen and (max-width: 433px)  {
+    .button {
+  font-size: 14px;
+  margin-left: 176px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.footer>p {
+    width: 90%;
+    font-size: 12px;
+    color: #6A7177;
+}

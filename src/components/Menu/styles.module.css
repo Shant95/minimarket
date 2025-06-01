@@ -1,0 +1,210 @@
+.menu {
+    z-index: 99999999;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 45%;
+    bottom: 0;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    padding: 30px;
+}
+
+@media screen and (max-width: 1289px) {
+    .menu {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 948px) {
+    .menu {
+        width: 95%;
+    }
+}
+
+.show {
+    margin-left: 0%;
+    animation: slideIn 0.2s linear;
+}
+
+.hide {
+    margin-left: -45%;
+    animation: slideOut 0.2s linear;
+}
+
+@keyframes slideIn {
+    0% {
+        margin-left: -45%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: -45%;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.title {
+    font-size: 30px;
+}
+
+.closeButton {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    background-color: rgba(98, 98, 98, .3);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 675px) {
+    .closeButton {
+        margin-right: 20px;
+    }
+}
+
+.closeButton:hover {
+    background-color: rgba(98, 98, 98, .5);
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 45%;
+    height: 524px;
+    overflow-y: scroll;
+    padding: 8px;
+}
+
+@media screen and (max-width: 609px) {
+    .container {
+        width: 40%;
+    }
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 45%;
+    height: 524px;
+    overflow-y: scroll;
+    padding: 8px;
+    transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 609px) {
+    .subContainer {
+        width: 70%;
+    }
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.subContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.subMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.subMenuItem {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2rem;
+    background-color: rgb(136, 210, 7);
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 534px) {
+    .subMenuItem {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .subMenuItem {
+        width: 100px;
+    }
+}
+
+.subMenuItem:hover {
+    background-color: rgba(136, 210, 7, 0.5);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.subMenuLink {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+@media screen and (max-width: 534px) {
+    .subMenuLink {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .subMenuLink {
+        font-size: 12px;
+    }
+}

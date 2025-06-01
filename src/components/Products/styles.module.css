@@ -1,0 +1,32 @@
+.products {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 548px)  {
+    .products {
+   margin-top: 20px;
+    }
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 521px)  {
+    .title {
+    font-size: 24px;
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+

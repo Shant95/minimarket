@@ -1,0 +1,108 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid rgb(98, 98, 98);
+    height: 80px;
+    padding: 5px 20px 5px 20px;
+}
+@media screen and (max-width: 1507px)  {
+    .item {
+   height: 100px;
+    }
+}
+@media screen and (max-width: 753px)  {
+    .item {
+    padding: 1px 5px 1px 5px;
+    }
+}
+
+
+.image {
+    width: 80px;
+    height: 80px;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 60%;
+}
+@media screen and (max-width: 1005px)  {
+    .product{
+    width: 70%;;
+    }
+}
+
+.name {
+    font-size: 20px;
+    margin: 0;
+}
+@media screen and (max-width: 1246px)  {
+    .name {
+    font-size: 16px;
+    }
+}
+@media screen and (max-width: 1061px)  {
+    .name {
+    font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 753px)  {
+    .name {
+    font-size: 12px;
+    }
+}
+
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buttons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1246px)  {
+    .buttons {
+    width: 25%;
+    border: 1px solid #ccc;
+    margin-right: 0px;
+    }
+}
+@media screen and (max-width: 1005px)  {
+    .buttons {
+    width: 30%;
+    }
+}
+
+.button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgb(253, 109, 7);
+    color: rgb(253, 109, 7);
+}
+
+.button > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quantity {
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+.navButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width: 1045px)  {
+    .navButton {
+    gap: 10px   ;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .navButton {
+     gap: 5px;
+    }
+}
+
+
+.navButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+@media screen and (max-width: 1045px)  {
+    .icon{
+   width: 30px;
+   height: 30px;
+    }
+}
+
+@media screen and (max-width: 548px)  {
+    .icon {
+     width: 25px;
+     height: 25px;
+    }
+}
+
+
+.icon > img {
+    width: 100%;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 4px;
+    top: -20px;
+    right: -15px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: rgb(253, 109, 7);
+}
+
+.text {
+    font-size: 14px;
+    margin: 0;
+    color: rgb(98, 98, 98);
+}
+
+@media screen and (max-width: 1246px)  {
+    .text {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1045px)  {
+    .text {
+   font-size: 15px;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .text {
+    font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 449px)  {
+    .text {
+    font-size: 11px;
+    }
+}

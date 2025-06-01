@@ -1,0 +1,165 @@
+.card {
+    position: relative;
+    width: 170px;
+    height: 280px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64); 
+    transition: all 0.2s linear;
+}
+@media screen and (max-width: 1187px)  {
+    .card {
+   width: 150px;
+    }
+}
+@media screen and (max-width: 521px)  {
+    .card {
+    width: 120px;
+    }
+}
+@media screen and (max-width: 427px)  {
+    .card {
+    width: 100px;  
+    height: 230px;  
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imageMoreButton {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: rgb(253, 109, 7);
+    border-radius: 2rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    display: none;
+    transition: all 0.2s linear;
+}
+
+.image:hover > .imageMoreButton {
+    display: flex;
+    transition: all 0.2s linear;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+}
+
+.name {
+    width: 100%;
+    font-size: 15px;
+    font-weight:lighter;
+    margin: 0;
+}
+@media screen and (max-width: 1537px)  {
+    .name {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1454px)  {
+    .name {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1307px)  {
+    .name {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 427px)  {
+    .name {
+  font-size: 10px;
+    }
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1390px)  {
+    .price {
+      font-size: 18px;
+    }
+}
+@media screen and (max-width: 1270px)  {
+    .price {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 427px)  {
+    .price {
+   font-size: 14px;
+    }
+}
+.price > span {
+    font-size: 14px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1270px)  {
+    .price > span {
+       font-size: 12px;
+    }
+}
+
+.button {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 3px solid rgb(253, 109, 7);
+    color: rgb(253, 109, 7);
+}
+@media screen and (max-width: 1463px)  {
+    .button {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 427px)  {
+    .button {
+   right: 5px;
+   bottom: 21px;
+    }
+}

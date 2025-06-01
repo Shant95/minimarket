@@ -1,0 +1,107 @@
+.productCategory {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1187px)  {
+    .productCategory{
+      height: 800px;
+    }
+}
+
+
+@media screen and (max-width: 769px)  {
+    .productCategory {
+      height: 1100px;
+    }
+}
+@media screen and (max-width: 427px)  {
+    .productCategory {
+    height: 900px;
+    }
+}
+.titleContainer {
+    width: 100%;
+    height: 60%;
+    border-radius: 32px;
+}
+@media screen and (max-width: 1187px)  {
+    .titleContainer {
+        height: 30%;
+    }
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 521px)  {
+    .title {
+     font-size: 24px;
+    }
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    height: 50%;
+    margin-top: -120px;
+}
+
+@media screen and (max-width: 1187px)  {
+    .cardsContainer {
+        display: grid;
+     grid-template-columns: repeat(4,1fr);
+     
+    }
+}
+@media screen and (max-width: 1035px)  {
+    .cardsContainer {
+ grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 769px)  {
+    .cardsContainer {
+       grid-template-columns: repeat(2,1fr);
+       margin-top: -230px;
+    }
+}
+@media screen and (max-width: 521px)  {
+    .cardsContainer {
+    margin-top: -260px;
+    }
+}
+@media screen and (max-width: 427px)  {
+    .cardsContainer {
+   margin-top: -200px;
+   gap: 3px;
+    }
+}
+
+.milk {
+    background-color: rgb(217, 240, 236);
+}
+
+.lightblue {
+    color: rgb(66, 172, 187);
+}
+
+.meat {
+    background-color: rgb(253, 190, 188);
+}
+
+.red {
+    color: rgb(172, 29, 58);
+}
+
+.black{
+    color: black;
+}

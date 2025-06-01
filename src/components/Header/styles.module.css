@@ -1,0 +1,142 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    gap: 10px;
+    z-index: 5555;
+}
+
+@media screen and (max-width: 1058px)  {
+    .header {
+   gap: 50px;
+    }
+}
+
+
+
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+@media screen and (max-width: 1045px)  {
+    .wrapper {
+    width: 50%;
+    }
+}
+@media screen and (max-width: 561px)  {
+    .wrapper {
+     width: 60%;
+    }
+}
+
+.logo {
+    width: 100px;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width: 548px)  {
+    .logo {
+     width: 80px;
+    }
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+.searchWrapper {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1045px)  {
+    .searchWrapper {
+    position: absolute;
+    width: 84%;
+    top: 90px;
+    }
+}
+
+@media screen and (max-width: 677px)  {
+    .searchWrapper {
+     width: 74%;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .searchWrapper {
+     top: 80px;
+     width: 80%;
+    }
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15%;
+}
+
+@media screen and (max-width: 1045px)  {
+    .buttonsWrapper {
+    width: 30%;
+    }
+}
+@media screen and (max-width: 678px)  {
+    .buttonsWrapper {
+     width: 40%;
+    }
+}
+.navContainer {
+    width: 80%;
+    height: 50px;
+    align-content: center;
+}
+
+@media screen and (max-width: 1045px)  {
+    .navContainer {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 747px)  {
+    .navContainer {
+     height: 70px;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .navContainer {
+    height: 55px;
+    margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 401px)  {
+    .navContainer {
+    height: 40px;
+    margin-top: 5px;
+    }
+}
+
+
+

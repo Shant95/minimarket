@@ -1,0 +1,124 @@
+.carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    border-radius: 32px;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    z-index: 0;
+}
+@media screen and (max-width: 868px)  {
+    .carousel {
+       height: 270px;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .carousel {
+     height: 210px;
+    }
+}
+
+@media screen and (max-width: 401px)  {
+    .carousel {
+   height: 170px;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    margin-right: -25px;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    z-index: 99999;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width: 475px)  {
+    .button {
+    width: 40px;
+    height: 40px;
+    margin-right: -20px;
+    }
+}
+
+.button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.button:nth-child(1) {
+    margin-left: -25px;
+}
+
+.arrow {
+    margin: 0;
+    font-weight: 20px;
+    color: rgb(98, 98, 98);
+}
+
+.button:nth-child(1) .arrow {
+    transform: rotate(180deg);
+}
+
+.button:nth-child(3) .arrow {
+    transform: rotate(0deg);
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.5s;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.64); 
+}
+
+.active {
+    opacity: 1;
+    width: 20px;
+    border-radius: 32px;
+}
+
+.inactive {
+    opacity: 0.7;
+}

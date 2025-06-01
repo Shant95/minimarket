@@ -1,0 +1,146 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (max-width: 1058px)  {
+    .navBar {
+   justify-content: center;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .navBar {
+     justify-content: space-between;
+    }
+}
+
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width: 1058px)  {
+    .location{
+    display: none;
+    }
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon > img {
+    width: 100%;
+}
+
+.address {
+    color: rgb(98, 98, 98);
+    margin: 0;
+}
+
+
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+@media screen and (max-width: 1187px)  {
+    .links {
+       gap: 7px;
+    }
+}
+
+@media screen and (max-width: 747px)  {
+    .links {
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     
+    }
+}
+@media screen and (max-width: 548px)  {
+    .links {
+    gap: 5px;
+    }
+}
+
+
+.link {
+    text-decoration: none;
+    color: rgb(98, 98, 98);
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 32px;
+    transition: all 0.2s linear;
+}
+@media screen and (max-width: 1187px)  {
+    .link {
+      font-size: 13px;
+    }
+}
+@media screen and (max-width: 548px)  {
+    .link {
+   font-size: 10px;
+    }
+}
+@media screen and (max-width: 401px)  {
+    .link {
+     padding: 5px 10px 5px 10px;
+    }
+}
+
+.link:hover {
+    opacity: 0.7;
+    transition: all 0.2s linear;
+}
+
+.links .link:nth-child(1) {
+    color: #000000;
+    background-color: rgb(254, 216, 12);
+    font-weight: bolder;
+}
+
+.links .link:nth-child(2) {
+    color: rgb(253, 109, 7);
+    font-weight: bolder;
+    border: 2px solid rgb(253, 109, 7);
+    transition: all 0.2s linear;
+}
+
+.links .link:nth-child(2):hover {
+    background-color: rgb(253, 109, 7);
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.links .link:nth-child(3) {
+    color: rgb(75, 14, 141);
+    font-weight: bolder;
+    border: 2px solid rgb(75, 14, 141);
+}
+
+.links .link:nth-child(3):hover {
+    background-color: rgb(75, 14, 141);
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.links .link:nth-child(n+4):nth-child(n+6) {
+    padding: 0;
+}
+
+.divider {
+    width: 1px;
+    height: 30px;
+    border: 1px solid rgb(98, 98, 98);
+    background-color: rgb(98, 98, 98);
+    border-radius: 32px;
+}
+
+@media screen and (max-width: 747px)  {
+    .divider {
+    display: none;
+    }
+}
