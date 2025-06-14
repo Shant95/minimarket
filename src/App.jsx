@@ -11,6 +11,8 @@ import ChatMenu from './components/ChatMenu/chatMenu';
 import AuthModal from './components/AuthModal/AuthModal';
 import HelpButton from './components/HelpButton/helpbutton';
 import ProductModal from './components/ProductModal/ProductModal';
+import Meat from './pages/Meat/meat';
+import Fruits from './pages/Fruits/fruits';
 
 
 function App() {
@@ -85,12 +87,15 @@ function App() {
     <div className="App">
       <Header onOpenAuthModal={handleOpenAuthModal} onOpenCart={handleOpenCart} onOpenMenu={handleOpenMenu} cartItems={cartItems} />
       <HelpButton onShowHelp={handleOpenChat} />
-
+     <div className="Container">
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/milk/*' element={<Milk onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart} />} />
+        <Route path='/' element={<Home onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart}/>} />
+        <Route path='/home' element={<Home onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart}/>} />
+        <Route path='/milk-products-and-eggs' element={<Milk onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart} />} />
+        <Route path='/meat-products' element={<Meat onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart}/>}/>
+        <Route path='/vegatables-and-fruits' element={<Fruits onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart}/>}/>
       </Routes>
+      </div>
 
       <Footer />
 

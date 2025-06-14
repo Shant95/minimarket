@@ -1,0 +1,87 @@
+.container{
+    width: 100%;
+    height: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filters{
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+    border-radius: 1.5rem;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filterName{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.filterItem{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.text{
+    margin: 0;
+    font-size: 14px;
+    min-width: 65px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputs > input {
+    width: 35%;
+    height: 27px;
+}
+.filterItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.productCards{
+    width: 100%;
+    padding: 30px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+.productCards::-webkit-scrollbar{
+    width: 0px;
+    background-color: transparent;
+}
+
+.productCards{
+    -ms-overflow-style: none;
+}
+.productCards{
+    scrollbar-width: none;
+}
+.noProducts{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #777;
+}

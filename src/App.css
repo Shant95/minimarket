@@ -16,3 +16,11 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+.Container{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
