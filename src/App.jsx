@@ -13,6 +13,7 @@ import HelpButton from './components/HelpButton/helpbutton';
 import ProductModal from './components/ProductModal/ProductModal';
 import Meat from './pages/Meat/meat';
 import Fruits from './pages/Fruits/fruits';
+import SearchModal from './components/SearchModal/SearchModal';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   const [openProductModal, setOpenProductModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [cartItems, setCartItems] = useState([]);
+  const [openSearchModal,setOpenSearchModal]=useState(false);
 
   const handleOpenAuthModal = () => {
     setOpenAuthModal(true);
@@ -34,6 +36,7 @@ function App() {
 
   const handleOpenCart = () => {
     setOpenCart(true);
+    setShowChat(false)
   }
 
   const handleCloseCart = () => {
@@ -63,6 +66,9 @@ function App() {
     setOpenProductModal(false);
     setSelectedProduct(null);
   }
+  const handleOpenSearchModal = () =>{
+    setOpenSearchModal(true);
+  }
 
   const handleAddToCart = (product) => {
     const existingItemIndex = cartItems.findIndex(item => item.id === product.id);
@@ -74,6 +80,7 @@ function App() {
       setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
   }
+  
 
   const handleClearCart = () => {
     setCartItems([]);
@@ -82,10 +89,13 @@ function App() {
   const handleUpdateCart = (updatedCartItems) => {
     setCartItems(updatedCartItems);
   }
+  const handleCloseSearchModal = () =>{
+    setOpenSearchModal(false);
+  }
 
   return (
     <div className="App">
-      <Header onOpenAuthModal={handleOpenAuthModal} onOpenCart={handleOpenCart} onOpenMenu={handleOpenMenu} cartItems={cartItems} />
+      <Header onOpenAuthModal={handleOpenAuthModal} onOpenCart={handleOpenCart} onOpenMenu={handleOpenMenu} cartItems={cartItems} onOpenSearch={handleOpenSearchModal}/>
       <HelpButton onShowHelp={handleOpenChat} />
      <div className="Container">
       <Routes>
@@ -104,6 +114,7 @@ function App() {
       {showChat ? <ChatMenu onClick={handleCloseChat} /> : null}
       {openCart && <Cart onClose={handleCloseCart} cartItems={cartItems} onClearCart={handleClearCart} handleUpdateCart={handleUpdateCart} />}
       {openProductModal && selectedProduct && <ProductModal product={selectedProduct} onClose={handleCloseProductModal} onAddToCart={() => handleAddToCart(selectedProduct)} />}
+        {openSearchModal && <SearchModal onMoreClick={handleOpenProductModal} onAddToCart={handleAddToCart} onClose={handleCloseSearchModal} />}
     </div>
   );
 }

@@ -8,7 +8,7 @@ import cart from '../../images/UI/cart.svg';
 import user from '../../images/UI/user.svg';
 import NavBar from '../NavBar/NavBar';
 
-const Header = ({ onOpenAuthModal, onOpenCart, cartItems, onOpenMenu }) => {
+const Header = ({ onOpenAuthModal, onOpenCart, cartItems, onOpenMenu,onOpenSearch }) => {
     const handleClickAuthButton = () => {
         onOpenAuthModal();
     };
@@ -19,6 +19,10 @@ const Header = ({ onOpenAuthModal, onOpenCart, cartItems, onOpenMenu }) => {
 
     const handleClickMenuButton = () => {
         onOpenMenu();
+    }
+
+    const handleSearch = () =>{
+     onOpenSearch()
     }
 
     return (
@@ -35,7 +39,7 @@ const Header = ({ onOpenAuthModal, onOpenCart, cartItems, onOpenMenu }) => {
                 </div>
 
                 <div className={styles.searchWrapper}>
-                    <SearchBar />
+                    <SearchBar onClick={handleSearch}/>
                 </div>
 
                 <div className={styles.buttonsWrapper}>
